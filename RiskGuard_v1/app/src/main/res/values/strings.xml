@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">PI RiskGuard</string>
+    <string name="registro_de">REGISTRO DE RISCOS</string>
+    <string name="n_o_sabe_qu">Não sabe qual escolher?</string>
+    <string name="label">Descrição</string>
+    <string name="imagem">Imagem</string>
+</resources>
