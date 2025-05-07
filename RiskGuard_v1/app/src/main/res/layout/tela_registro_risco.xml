@@ -43,31 +43,37 @@
             android:src="@drawable/frame"
             android:background="@drawable/image_3" />
 
-        <!-- Label Prédio -->
+        <!-- Label Coordenadas -->
         <TextView
-            android:layout_width="85dp"
+            android:id="@+id/txt_coordenadas"
+            android:layout_width="100dp"
             android:layout_height="30dp"
             android:layout_below="@id/whatsapp_image"
             android:layout_marginTop="5dp"
-            android:text="Prédio"
+            android:text="Coordenadas"
             android:textColor="#000000"
             android:textSize="15sp" />
 
-        <!-- Campo Prédio -->
+        <!-- Campo Coordenadas -->
         <Spinner
-            android:id="@+id/spinner_predio"
+            android:id="@+id/spinner_coordenadas"
             android:layout_width="match_parent"
             android:layout_height="48dp"
-            android:layout_below="@id/whatsapp_image"
-            android:layout_marginTop="25dp"
-            android:background="@drawable/select" />
+            android:layout_below="@id/txt_coordenadas"
+            android:layout_marginTop="4dp"
+            android:background="@drawable/select"
+            android:clickable="false"
+            android:focusable="false"
+            android:spinnerMode="dialog" />
+
+
 
         <!-- Label Tipo de Risco -->
         <TextView
             android:id="@+id/spinner_tipo_label"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@id/spinner_predio"
+            android:layout_below="@id/spinner_coordenadas"
             android:layout_marginTop="5dp"
             android:text="Tipo de risco"
             android:textColor="#000000"
@@ -78,11 +84,11 @@
             android:id="@+id/spinner_tipo"
             android:layout_width="match_parent"
             android:layout_height="48dp"
-            android:layout_below="@id/spinner_predio"
-            android:layout_marginTop="28dp"
+            android:layout_below="@id/spinner_tipo_label"
+            android:layout_marginTop="4dp"
             android:background="@drawable/select" />
 
-        <!-- Dica e Clique Aqui (inline) -->
+        <!-- Dica e Clique Aqui -->
         <LinearLayout
             android:id="@+id/ajuda"
             android:layout_width="wrap_content"
@@ -124,7 +130,7 @@
             android:padding="12dp"
             android:textSize="14sp" />
 
-        <!-- Linha com Ícone de Data + Anexar Imagem -->
+        <!-- Linha com Data e Imagem -->
         <LinearLayout
             android:id="@+id/data_anexo"
             android:layout_width="match_parent"
@@ -135,7 +141,7 @@
             android:weightSum="2"
             android:gravity="center_horizontal">
 
-            <!-- Container Data -->
+            <!-- Data -->
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -143,7 +149,6 @@
                 android:orientation="vertical"
                 android:paddingEnd="4dp">
 
-                <!-- Label Data -->
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -152,21 +157,32 @@
                     android:textSize="14sp"
                     android:layout_marginBottom="4dp" />
 
-                <!-- Ícone Data -->
                 <RelativeLayout
+                    android:id="@+id/data_container"
                     android:layout_width="match_parent"
                     android:layout_height="48dp"
                     android:background="@drawable/select"
                     android:padding="12dp">
 
                     <ImageView
+                        android:id="@+id/icon_calendar"
                         android:layout_width="24dp"
                         android:layout_height="24dp"
                         android:src="@drawable/calendar" />
+
+                    <TextView
+                        android:id="@+id/text_data"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/icon_calendar"
+                        android:layout_marginStart="16dp"
+                        android:text="Selecione"
+                        android:textColor="#000000"
+                        android:textSize="16sp" />
                 </RelativeLayout>
             </LinearLayout>
 
-            <!-- Container Imagem -->
+            <!-- Imagem -->
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -174,7 +190,6 @@
                 android:orientation="vertical"
                 android:paddingStart="4dp">
 
-                <!-- Label Imagem -->
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -183,14 +198,15 @@
                     android:textSize="14sp"
                     android:layout_marginBottom="4dp" />
 
-                <!-- Ícone Imagem -->
                 <RelativeLayout
+                    android:id="@+id/container_imagem"
                     android:layout_width="match_parent"
                     android:layout_height="48dp"
                     android:background="@drawable/select"
                     android:padding="12dp">
 
                     <ImageView
+                        android:id="@+id/icon_imagem"
                         android:layout_width="24dp"
                         android:layout_height="24dp"
                         android:src="@drawable/image" />
@@ -202,7 +218,7 @@
         <Button
             android:id="@+id/btn_enviar"
             android:layout_width="match_parent"
-            android:layout_height="35dp"
+            android:layout_height="48dp"
             android:layout_below="@id/data_anexo"
             android:layout_marginTop="24dp"
             android:layout_centerHorizontal="true"

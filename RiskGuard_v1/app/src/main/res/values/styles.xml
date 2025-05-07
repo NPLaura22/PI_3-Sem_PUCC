@@ -3,22 +3,49 @@
         <item name="android:textSize">24sp</item>
         <item name="android:textColor">#000000</item>
     </style>
-
     <style name="n_o_sabe_qu">
         <item name="android:textSize">16sp</item>
         <item name="android:textColor">#000000</item>
     </style>
-
     <style name="label">
         <item name="android:textSize">16sp</item>
         <item name="android:textColor">#000000</item>
     </style>
-
     <style name="imagem">
         <item name="android:textSize">16sp</item>
         <item name="android:textColor">#000000</item>
     </style>
-
     <style name="Theme.PI_RiskGuard_v1" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+    </style>
+
+    <style name="tipo_de_ris">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:fontFamily">sans-serif</item>
+    </style>
+    <style name="f_sicos">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+    <style name="exposi_o_a_">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+    <style name="exemplo_sal">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+    <style name="qu_micos">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+
+    <style name="usu_rio">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#FFFFFF</item>
+    </style>
+    <style name="sair">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#FFFFFF</item>
     </style>
 </resources>

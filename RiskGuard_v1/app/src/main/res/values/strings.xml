@@ -4,4 +4,23 @@
     <string name="n_o_sabe_qu">Não sabe qual escolher?</string>
     <string name="label">Descrição</string>
     <string name="imagem">Imagem</string>
+
+    <string name="tipo_de_ris">RISCOS</string>
+    <string name="f_sicos">FÍSICOS</string>
+    <string name="exposi_o_a_">Exposição a agentes físicos que podem afetar a saúde.</string>
+    <string name="exemplo_sal">Exemplo:\nSalas mal ventiladas.</string>
+    <string name="qu_micos">QUÍMICOS</string>
+
+    <string name="usu_rio">Usuário</string>
+    <string name="sair">SAIR</string>
+
+    <string-array name="tipos_de_risco">
+        <item> </item>
+        <item>Físicos</item>
+        <item>Químicos</item>
+        <item>Biológicos</item>
+        <item>Ergonômicos</item>
+        <item>Acidente</item>
+    </string-array>
+
 </resources>

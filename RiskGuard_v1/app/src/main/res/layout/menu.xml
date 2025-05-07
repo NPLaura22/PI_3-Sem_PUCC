@@ -1,0 +1,122 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/menu"
+    android:layout_width="324dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#435A6B"
+    android:padding="24dp"
+    android:clipToOutline="true">
+
+    <!-- Avatar genérico -->
+    <ImageView
+        android:id="@+id/generic_ava"
+        android:layout_width="82dp"
+        android:layout_height="81dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/user"
+        android:contentDescription="Avatar do usuário"
+        android:clipToOutline="true" />
+
+    <!-- Texto: Usuário -->
+    <TextView
+        android:id="@+id/usu_rio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/usu_rio"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:lineSpacingExtra="3sp"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal" />
+
+    <!-- Espaçamento -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="48dp" />
+
+    <!-- Item de menu: Registro de Riscos -->
+    <LinearLayout
+        android:id="@+id/layout_registro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="30dp">
+
+        <ImageView
+            android:id="@+id/icon_registro"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/documents"
+            android:contentDescription="Ícone de Registro de Riscos" />
+
+        <TextView
+            android:id="@+id/registro_de"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/registro_de"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:lineSpacingExtra="3sp"
+            android:gravity="center_vertical" />
+    </LinearLayout>
+
+    <!-- Item de menu: Tipo de Riscos -->
+    <LinearLayout
+        android:id="@+id/layout_tipo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="30dp">
+
+        <ImageView
+            android:id="@+id/icon_tipo"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/menu_white"
+            android:contentDescription="Ícone de Tipo de Riscos" />
+
+        <TextView
+            android:id="@+id/tipo_de_ris"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/tipo_de_ris"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:lineSpacingExtra="3sp"
+            android:gravity="center_vertical" />
+    </LinearLayout>
+
+    <!-- Item de menu: Sair -->
+    <LinearLayout
+        android:id="@+id/layout_sair"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="30dp">
+
+        <ImageView
+            android:id="@+id/icon_sair"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/logout"
+            android:contentDescription="Ícone de Sair" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/sair"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:lineSpacingExtra="3sp"
+            android:gravity="center_vertical" />
+    </LinearLayout>
+
+</LinearLayout>

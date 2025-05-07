@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "37002823056",
+    "project_id": "pi-riskguard",
+    "storage_bucket": "pi-riskguard.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:37002823056:android:2f130e19b7ff421fd99f15",
+        "android_client_info": {
+          "package_name": "com.example.pi_riskguard_v1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPdtTV1tNCR3AjyccCRtLkkigefxPJyqU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
