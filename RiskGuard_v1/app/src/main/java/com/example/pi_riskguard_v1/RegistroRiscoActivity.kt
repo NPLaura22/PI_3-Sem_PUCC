@@ -138,9 +138,6 @@ class RegistroRiscoActivity : AppCompatActivity() {
                 adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
                 spinnerCoordenadas.adapter = adapter
 
-                // Exibindo um Toast com as coordenadas
-                Toast.makeText(this, texto, Toast.LENGTH_LONG).show()
-                Log.d("GeoLocalizacao", texto)
             } else {
                 // Caso não consiga obter a localização
                 val locationRequest = LocationRequest.Builder(
@@ -164,9 +161,6 @@ class RegistroRiscoActivity : AppCompatActivity() {
                             adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
                             spinnerCoordenadas.adapter = adapter
 
-                            // Exibindo as coordenadas no Toast
-                            Toast.makeText(applicationContext, texto, Toast.LENGTH_LONG).show()
-                            Log.d("GeoLocalizacao", texto)
                         } else {
                             Toast.makeText(applicationContext, "Localização ainda indisponível", Toast.LENGTH_SHORT).show()
                         }
