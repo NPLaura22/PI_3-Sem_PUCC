@@ -34,6 +34,7 @@ firebase-database = "com.google.firebase:firebase-database:20.3.0"
 firebase-analytics = "com.google.firebase:firebase-analytics-ktx:21.6.0" # já deve estar aí
 material = { group = "com.google.android.material", name = "material", version = "1.11.0" }
 play-services-location = { group = "com.google.android.gms", name = "play-services-location", version.ref = "playservices" }
+firebase-storage = { group = "com.google.firebase", name = "firebase-storage", version = "20.3.0" }
 
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
