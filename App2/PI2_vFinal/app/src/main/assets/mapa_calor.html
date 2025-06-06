@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Mapa de Calor</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <style>
+        #map { height: 100vh; width: 100vw; }
+    </style>
+</head>
+<body>
+<div id="map"></div>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="https://unpkg.com/leaflet.heat/dist/leaflet-heat.js"></script>
+
+<script>
+    var map = L.map('map').setView([-23.5505, -46.6333], 13);
+
+    // Centralização inicial (pode ser sobrescrita depois)
+    // map.setView([-22.837, -47.045], 14);
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+        maxZoom: 18,
+        attribution: '© OpenStreetMap'
+    }).addTo(map);
+
+    var heatLayer = null;
+
+    function carregarHeatmap(dados) {
+        console.log("Recebido:", dados);
+        try {
+            alert("Heatmap recebido: " + JSON.stringify(dados));
+        } catch(e) {}
+
+        // Remove camada anterior se existir
+        if (heatLayer) {
+            map.removeLayer(heatLayer);
+        }
+
+        // Centraliza o mapa automaticamente nos pontos recebidos
+        if (dados.length > 0) {
+            var latlngs = dados.map(function(p) { return [p[0], p[1]]; });
+            var bounds = L.latLngBounds(latlngs);
+            map.fitBounds(bounds, {padding: [50, 50]});
+        }
+
+        // Multiplica a intensidade para testar e aumenta o raio
+        var dadosAjustados = dados.map(function(p) {
+            if (p.length === 2) return [p[0], p[1], 10];
+            return [p[0], p[1], p[2] * 10];
+        });
+        heatLayer = L.heatLayer(dadosAjustados, {radius: 60}).addTo(map);
+
+        // Adiciona marcador para cada ponto para depuração visual
+        dadosAjustados.forEach(function(p) {
+            L.circleMarker([p[0], p[1]], {radius: 8, color: 'red'}).addTo(map);
+        });
+    }
+
+    // Função extra para testar manualmente no Android ou navegador
+    function testarHeatmap() {
+        var exemplo = [
+            [-22.8341822, -47.052738, 10],
+            [-22.8401943, -47.0374148, 10]
+        ];
+        carregarHeatmap(exemplo);
+    }
+</script>
+</body>
+</html>

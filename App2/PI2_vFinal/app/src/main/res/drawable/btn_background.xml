@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" android:shape="rectangle">
+    <solid android:color="#BCCED0" /> <!-- cor do fundo igual ao seu backgroundTint -->
+    <corners android:radius="4dp" /> <!-- raio menor, menos arredondado -->
+</shape>

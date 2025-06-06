@@ -1,0 +1,22 @@
+Projeto Integrador
+
+Integrantes
+Ana Beatriz Maranho Oliveira Silva - 23000755
+Julia Carolina Kimura - 23031075
+Juliana Prado - 24003497
+Laura Nogueira Pereira - 24013968
+
+Link do GitHub:
+https://github.com/NPLaura22/PI_III_RiskGuard
+
+Link o Firebase:
+https://console.firebase.google.com/u/0/project/pi-riskguard/database/pi-riskguard-default-rtdb/data
+
+Link do vídeo de apresentação:
+https://drive.google.com/drive/folders/1A27b_GgXVoFWLUmqIvlTbu8FFAqrHBg8
+
+Instruções de acesso:
+Nome do projeto: PI-RiskGuard
+Abrir console
+Categorias dos produtos -> Criação
+Realtime Database

@@ -1,0 +1,39 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/dashboard"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BCCED0"
+    tools:context=".MapaDeRiscosActivity">
+
+    <!-- Ícone do menu hambúrguer -->
+    <ImageView
+        android:id="@+id/menu"
+        android:layout_width="37dp"
+        android:layout_height="36dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="25dp"
+        android:src="@drawable/menu"
+        android:contentDescription="Menu" />
+
+    <!-- Texto do título MAPA DE RISCOS -->
+    <TextView
+        android:id="@+id/mapaderiscos_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="31dp"
+        android:text="MAPA DE RISCOS"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textColor="#000000" />
+
+    <!-- WebView para o mapa de calor -->
+    <WebView
+        android:id="@+id/webview_mapa"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/mapaderiscos_text"
+        android:layout_marginTop="16dp" />
+</RelativeLayout>

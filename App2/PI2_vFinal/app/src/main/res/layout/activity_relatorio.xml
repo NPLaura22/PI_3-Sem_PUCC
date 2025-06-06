@@ -1,0 +1,207 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_relatorio"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#253745"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".RelatorioActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/menu"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:contentDescription="Menu"
+            android:src="@drawable/menu" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_weight="1" />
+
+        <TextView
+            android:id="@+id/mapaderiscos_text"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:layout_marginEnd="110dp"
+            android:text="RELATÓRIO"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="24dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/filtro_tipo"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="45dp"
+            android:background="@drawable/bg_filtro"
+            android:paddingStart="12dp"
+            android:paddingEnd="8dp">
+
+            <Spinner
+                android:id="@+id/spinner_tipo"
+                android:layout_width="221dp"
+                android:layout_height="match_parent" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_filtrar"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text= "Filtrar por tipo"
+            android:textColor="#FF000000"
+            android:backgroundTint="#BCCED0"
+        />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+
+        <!-- Data Início -->
+        <RelativeLayout
+            android:id="@+id/filtro_data_inicio"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_filtro"
+            android:paddingEnd="12dp">
+
+            <RelativeLayout
+                android:id="@+id/data_inicio_container"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/icon_calendar_inicio"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/calendar" />
+
+                <TextView
+                    android:id="@+id/filtro_data_inicio_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/icon_calendar_inicio"
+                    android:layout_marginStart="16dp"
+                    android:text="Início"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <!-- Data Fim -->
+        <RelativeLayout
+            android:id="@+id/filtro_data_fim"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:background="@drawable/bg_filtro"
+            android:paddingEnd="12dp"
+            android:layout_marginStart="8dp">
+
+            <RelativeLayout
+                android:id="@+id/data_fim_container"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:padding="8dp">
+
+                <ImageView
+                    android:id="@+id/icon_calendar_fim"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/calendar" />
+
+                <TextView
+                    android:id="@+id/filtro_data_fim_text"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toEndOf="@id/icon_calendar_fim"
+                    android:layout_marginStart="16dp"
+                    android:text="Fim"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Se somente a data de início for preenchida, serão retornados os registros desse dia. Se ambos forem preenchidos, o filtro será pelo período."
+        android:textSize="10.5dp"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/white"
+        />
+
+    <Button
+        android:id="@+id/button_filtrar_data"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Filtrar por data"
+        android:backgroundTint="#BCCED0"
+        android:textColor="#000000"
+        android:layout_marginTop="10dp"
+        />
+
+    <!-- Botão Limpar Filtros -->
+    <Button
+        android:id="@+id/btn_limpar_filtro"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Limpar Filtros"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#BCCED0"
+        android:textColor="#000000"
+        />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="24dp" />
+
+    <!-- Mensagem quando nenhum registro for encontrado -->
+    <TextView
+        android:id="@+id/tv_nenhum_registro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nenhum registro encontrado."
+        android:textColor="@android:color/white"
+        android:layout_gravity="center"
+        android:visibility="gone"
+        android:textSize="16sp"
+        android:padding="16dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerRiscos"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:paddingBottom="16dp" />
+
+</LinearLayout>

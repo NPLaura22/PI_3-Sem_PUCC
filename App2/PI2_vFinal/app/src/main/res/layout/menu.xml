@@ -1,0 +1,95 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/menu"
+    android:layout_width="324dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#435A6B"
+    android:padding="24dp"
+    android:clipToOutline="true">
+
+    <!-- Avatar genérico -->
+    <ImageView
+        android:id="@+id/Generic_avatar"
+        android:layout_width="82dp"
+        android:layout_height="81dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/avatar"
+        android:contentDescription="Avatar do usuário"
+        android:clipToOutline="true" />
+
+    <!-- Texto: Usuário -->
+    <TextView
+        android:id="@+id/usuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/usu_rio"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:lineSpacingExtra="3sp"
+        android:gravity="center"
+        android:layout_gravity="center_horizontal" />
+
+    <!-- Espaçamento -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="48dp" />
+
+    <!-- Item de menu: Mapa de Riscos -->
+    <LinearLayout
+        android:id="@+id/layout_mapa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="30dp">
+
+        <ImageView
+            android:id="@+id/map"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/map"
+            android:contentDescription="Ícone de Mapa de Riscos" />
+
+        <TextView
+            android:id="@+id/texto_mapa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/mapa_de_riscos"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:lineSpacingExtra="3sp"
+            android:gravity="center_vertical" />
+    </LinearLayout>
+
+    <!-- Item de menu: Relatório -->
+    <LinearLayout
+        android:id="@+id/layout_relatorio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="30dp">
+
+        <ImageView
+            android:id="@+id/icon_relatorio"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/clipboard"
+            android:contentDescription="Ícone de Relatório" />
+
+        <TextView
+            android:id="@+id/texto_relatorio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:text="@string/relatorio"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:lineSpacingExtra="3sp"
+            android:gravity="center_vertical" />
+    </LinearLayout>
+
+</LinearLayout>

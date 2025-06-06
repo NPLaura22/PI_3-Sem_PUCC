@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">PI2ADMIN</string>
+    <string-array name="status_options">
+        <item>Finalizado</item>
+        <item>Em andamento</item>
+        <item>Pendente</item>
+    </string-array>
+    <string name="mapa_de_riscos">Mapa de riscos</string>
+    <string name="relatorio">Relatório</string>
+    <string name="usu_rio">Usuário</string>
+
+    <string-array name="tipos_de_risco">
+        <item>Tipos de risco</item>
+        <item>Físicos</item>
+        <item>Químicos</item>
+        <item>Biológicos</item>
+        <item>Ergonômicos</item>
+        <item>Acidente</item>
+    </string-array>
+</resources>
