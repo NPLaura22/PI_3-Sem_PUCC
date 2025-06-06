@@ -12,6 +12,9 @@ https://github.com/NPLaura22/PI_III_RiskGuard
 Link o Firebase:
 https://console.firebase.google.com/u/0/project/pi-riskguard/database/pi-riskguard-default-rtdb/data
 
+Link do trello:
+https://trello.com/b/SxWqnbSf/equipet0111
+
 Link do vídeo de apresentação:
 https://drive.google.com/drive/folders/1A27b_GgXVoFWLUmqIvlTbu8FFAqrHBg8
 
